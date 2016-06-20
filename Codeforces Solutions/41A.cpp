@@ -1,6 +1,7 @@
 #include <iostream>
 
 using namespace std;
+
 string Reverse(string y)
 {
     string res="";
