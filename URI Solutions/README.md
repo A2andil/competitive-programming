@@ -1,3 +1,3 @@
 # URI-Solutions
-Uri judge online problems solutions
+URI judge online problems solutions
 with C++ & C#
