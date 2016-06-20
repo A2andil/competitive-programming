@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
         if(q-p>=2)
             count++;
     }
+    
     cout<<count<<endl;
     return 0;
 }
