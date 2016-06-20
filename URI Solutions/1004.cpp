@@ -8,5 +8,5 @@ int main()
      while(cin>>a>>b)
          cout<<"PROD = "<<a*b<<endl;
 
- return 0;
+     return 0;
 }
