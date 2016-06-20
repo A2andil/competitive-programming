@@ -1,14 +1,9 @@
 using System;
 
-
 class URI
 {
-
-
     static void Main(string[] args)
     {
-
-
         int t, h, m, s;
         t = Convert.ToInt32(Console.ReadLine());
 
@@ -18,6 +13,4 @@ class URI
 
         Console.WriteLine(h + ":" + m + ":" + s);
     }
-
-
 }
