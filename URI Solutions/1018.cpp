@@ -15,6 +15,5 @@ int main()
             cout<<q<<" nota(s) de R$ "<<arr[i]<<",00\n";
         }
     }
-    
     return 0;
 }
