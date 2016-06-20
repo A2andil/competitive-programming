@@ -1,9 +1,9 @@
 using System; 
 
-class URI {
-
-    static void Main(string[] args) { 
-
+class URI 
+{
+    static void Main(string[] args) 
+    { 
         int q, res;
             int[] arr = { 100, 50, 20, 10, 5, 2, 1 };
 
