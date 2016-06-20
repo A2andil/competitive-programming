@@ -12,5 +12,6 @@ int main()
          y++;
            cout<<y<<endl;
    }
+   
     return 0;
 }
