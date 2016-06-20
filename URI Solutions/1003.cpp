@@ -7,5 +7,6 @@ int main()
    int a,b;
    while(cin>>a>>b)
  	  cout<<"SOMA = "<<a+b<<endl;
-return 0;
+ 	  
+   return 0;
 }
