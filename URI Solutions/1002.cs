@@ -1,6 +1,5 @@
 using System;
 
-
 class URI
 {
 
