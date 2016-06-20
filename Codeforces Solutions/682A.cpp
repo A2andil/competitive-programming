@@ -22,6 +22,7 @@ int main()
             if((i+j)%5==0)
                 count++;
     }
+    
     cout<<count<<endl;
     return 0;
 }
