@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 int main()
 {
     int a,b,c,max,arr[5];
