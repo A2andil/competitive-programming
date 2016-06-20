@@ -1,10 +1,10 @@
 using System; 
 
-class URI {
-
-    static void Main(string[] args) { 
-
-        int num, hour;
+class URI 
+{
+    static void Main(string[] args) 
+    { 
+            int num, hour;
             double per_hour, salary;
 
             num = Convert.ToInt16(Console.ReadLine());
@@ -14,5 +14,4 @@ class URI {
             salary = hour * per_hour;
             Console.WriteLine("NUMBER = " + num + "\nSALARY = U$ " + salary.ToString("0.00"));
     }
-
 }
