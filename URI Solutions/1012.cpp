@@ -1,6 +1,7 @@
 #include <iostream>
 #include<iomanip>
 #include<string>
+
 using namespace std;
 
 void print(string out,double value)
@@ -20,6 +21,5 @@ int main(int argc, char *argv[])
         print("QUADRADO: ",b*b);
         print("RETANGULO: ",a*b);
     }
-    
     return 0;
 }
