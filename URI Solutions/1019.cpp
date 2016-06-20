@@ -12,6 +12,5 @@ int main(int argc, char *argv[])
         s = t -(h*3600 + m *60);
         cout<<h<<":"<<m<<":"<<s<<endl;
     }
-    
     return 0;
 }
