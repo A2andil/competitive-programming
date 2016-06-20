@@ -1,10 +1,7 @@
 using System;
 
-
 class URI
 {
-
-
     static void Main(string[] args)
     {
             double pi = 3.14159, a, b, c;
