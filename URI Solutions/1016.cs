@@ -8,6 +8,7 @@ class URI
         d = Convert.ToInt16(Console.ReadLine());
 
         Console.WriteLine((d*2)+" minutos");
+        
     }
 }
 
