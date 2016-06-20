@@ -12,5 +12,6 @@ int main()
 	  salary=hour*per_hour;
 	  cout<<"NUMBER = "<<num<<endl<<"SALARY = U$ "<<fixed<<setprecision(2)<<salary<<endl;
 	}
-return 0;
+	
+        return 0;
 }
