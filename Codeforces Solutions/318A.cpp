@@ -8,6 +8,7 @@ int main(int argc, char *argv[])
     while(cin>>n>>k)
     {
         n_o = n/2+n%2;
+        
         if(n_o>=k)
             res = 1 + 2*(k-1);
         else
