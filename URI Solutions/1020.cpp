@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main(int argc, char *argv[])
+int main()
 {
     int t,y,m,d;
     while(cin>>t)
