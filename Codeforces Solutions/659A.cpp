@@ -16,6 +16,7 @@ int main()
 
         if(res==0)
             res=n;
+            
        cout<<res<<endl;
    }
     return 0;
