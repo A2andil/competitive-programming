@@ -7,5 +7,6 @@ int main()
      int a,b;
      while(cin>>a>>b)
          cout<<"X = "<<a+b<<endl;
+         
      return 0;
 }
