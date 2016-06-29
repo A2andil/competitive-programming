@@ -6,6 +6,7 @@ class URI
     {
 
         int a, b;
+        
         a = Convert.ToInt16(Console.ReadLine());
         b = Convert.ToInt16(Console.ReadLine());
         
