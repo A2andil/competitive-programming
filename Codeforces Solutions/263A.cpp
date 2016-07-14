@@ -1,5 +1,5 @@
 #include <iostream>
-#include<math.h>
+#include<cmath>
 using namespace std;
 
 int main()
@@ -15,12 +15,7 @@ int main()
                 y=j;
             }
         }
-    if(x<2)
-        x+=2;
-    if(y<2)
-        y+=2;
-
-    result=(x-2)+(y-2);
+    result=abs(x-2)+abs(y-2);
     cout<<result<<endl;
     return 0;
 }
