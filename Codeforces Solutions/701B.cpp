@@ -12,13 +12,10 @@ int main()
     while(m--)
     {
         cin>>a>>b;
-        row[a-1]++;
-        col[b-1]++;
+        row[a-1]++,col[b-1]++;
 
-        if(row[a-1]==1)
-            r++;
-        if(col[b-1]==1)
-            c++;
+        r = (row[a-1]==1)?r+1:r;
+        c = (col[b-1]==1)?c+1:c;
 
         res = root - r*n-c*(n-r);
         v += to_string(res)+" ";
