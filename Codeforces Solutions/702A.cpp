@@ -15,7 +15,7 @@ int main()
         count = 1;
         for(j=i+1;j<n;++j){
             if(arr[j-1]<arr[j]) count++;
-            if(arr[j-1]>arr[j]||j==n-1){
+            if(arr[j-1]>=arr[j]||j==n-1){
                 max = (max<count)?count:max;
                 i =j-1;
                 break;
