@@ -20,7 +20,6 @@ int main()
                 i =j-1;
                 break;
             }
-
         }
     }
     cout<<max<<endl;
