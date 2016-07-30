@@ -1,101 +1,53 @@
+//In The Name of Allah
 #include <iostream>
-
+typedef long long LL;
 using namespace std;
 
-int main()
-{
-    long long a,b,c,d,past,mak,s,n;
-    char op1,op2,op3;
-    cin>>n;
-    for(int h=0;h<n;h++)
-    {
-       cin>>a>>op1>>b>>op2>>c>>op3>>d;
-       if(op2=='+'||op2=='-')
-       {
-           a=a*d;
-           c=c*b;
-           d=b*d;
+struct Number{
+    int P,M;
+};
+void print(LL p,LL m){
+    cout<<p<<'/'<<m<<" = ";
+    LL i,s=(p<m)?p:m;
 
-           if(op2=='+')
-             past=a+c;
-           else if(op2=='-')
-              past=a-c;
-
-           mak=d;
-           if(past<mak)
-            s=past;
-           else
-            s=mak;
-
-           if(s<0)
-            s*=-1;
-           for(int i=s;i>=2;i--)
-           {
-               if(past%i==0&&mak%i==0)
-                  {
-                     past/=i;
-                     mak/=i;
-                     break;
-                  }
-           }
-           if(op2=='+')
-               cout<<a+c<<"/"<<d<<" = "<<past<<"/"<<mak<<endl;
-           else
-               cout<<a-c<<"/"<<d<<" = "<<past<<"/"<<mak<<endl;
-
+    for(i=(s<0?-s:s);i>=2;i--){
+       if(p%i==0&&m%i==0){
+          p/=i;
+          m/=i;
+          break;
        }
-       else
-       {
-           if(op2=='*')
-           {
-               past=a*c;
-               mak=b*d;
-               cout<<past<<"/"<<mak<<" = ";
+    }
+    cout<<p<<'/'<<m<<endl;
+}
 
-               if(past<mak)
-                 s=past;
-               else
-                 s=mak;
-
-               if(s<0)
-                 s*=-1;
-               for(int i=s;i>=2;i--)
-               {
-                  if(past%i==0&&mak%i==0)
-                  {
-                     past/=i;
-                     mak/=i;
-                     break;
-                  }
-               }
-            cout<<past<<"/"<<mak<<endl;
-           }
-           else
-            {
-                past=a*d;
-                mak=b*c;
-                 cout<<past<<"/"<<mak<<" = ";
-
-               if(past<mak)
-                 s=past;
-               else
-                 s=mak;
-
-               if(s<0)
-                 s*=-1;
-               for(int i=s;i>=2;i--)
-               {
-                  if(past%i==0&&mak%i==0)
-                  {
-                     past/=i;
-                     mak/=i;
-                     break;
-                  }
-               }
-            cout<<past<<"/"<<mak<<endl;
-
-            }
-       }
+int main(){
+    Number one,two;
+    char d,s;
+    LL n,p,m; cin>>n;
+    while(n--){
+        cin>>one.P>>d>>one.M>>s>>two.P>>d>>two.M;
+        switch(s){
+            case '+':
+                p=one.P*two.M+two.P*one.M;
+                m=one.M*two.M;
+                print(p,m);
+                break;
+            case '-':
+                p=one.P*two.M-two.P*one.M;
+                m=one.M*two.M;
+                print(p,m);
+                break;
+            case '*':
+                p=one.P*two.P;
+                m=one.M*two.M;
+                print(p,m);
+                break;
+            case '/':
+                p=one.P*two.M;
+                m=one.M*two.P;
+                print(p,m);
+                break;
+        }
     }
     return 0;
 }
