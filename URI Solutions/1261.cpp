@@ -8,7 +8,7 @@ typedef string Str;
 
 map<Str,I> M;
 int main(){
-    I n,m,v,res=0,j; cin>>n>>m;
+    I n,m,v,res,j; cin>>n>>m;
     Str k,text;
     while (n--) {
         cin>>k>>v;
