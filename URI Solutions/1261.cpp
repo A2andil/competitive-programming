@@ -8,7 +8,7 @@ typedef string Str;
 
 map<Str,I> M;
 int main(){
-    I n,m,v,res,j; cin>>n>>m;
+    I n,m,v,res=0,j; cin>>n>>m;
     Str k,text;
     while (n--) {
         cin>>k>>v;
@@ -24,12 +24,13 @@ int main(){
             if(c==' '||c=='\n'){
                 N[j++]=text;
                 text ="";
+                continue;
             }
-            text =(c!=' '&&c!='\n')?text+c:text;
+            text +=c;
         }
 
         for(int i=0;i<j;i++) res += M[N[i]];
-        
+
         cout<<res<<endl;
     }
 
