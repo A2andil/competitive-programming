@@ -41,5 +41,4 @@ int main(){
         }
         cout <<stmt<< endl;
     }
-    return 0;
 }
