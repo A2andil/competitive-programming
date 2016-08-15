@@ -8,7 +8,7 @@ int main(){
     double rs;
     string v;
 
-    cin>>rs; res=rs*100;
+    cin>>rs; res=(rs*100.0)+0.5;
     cout<<"NOTAS:\n";
     for(int i=0;i<12;i++){
         if(i==0)
@@ -23,3 +23,4 @@ int main(){
     }
     return 0;
 }
+
