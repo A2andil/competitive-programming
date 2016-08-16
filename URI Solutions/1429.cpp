@@ -1,26 +1,21 @@
+//In The Name of Allah
 #include <iostream>
-
 using namespace std;
-int fact(int n)
-{
-    if(n==1)
-        return 1;
-    return n*fact(n-1);
+
+int fact(int c){
+    if(c==1) return 1;
+    return c*fact(c-1);
 }
-int main()
-{
-    string x;
-    int result;
-    while(cin>>x)
-    {
-        if(x=="0")
-            break;
 
-        result=0;
-        for(int i=0;i<x.length();i++)
-            result+=(x[i]-'0')*fact(x.length()-i);
-
-        cout<<result<<endl;
+int main(){
+    int n,cnt,ans;
+    while(cin>>n&&n){
+        cnt=1,ans=0;
+        while(n>0){
+           ans+=(n%10)*fact(cnt++);
+           n/=10;
+        }
+        cout<<ans<<endl;
     }
     return 0;
 }
