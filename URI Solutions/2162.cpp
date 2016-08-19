@@ -15,7 +15,7 @@ int main(){
     }
     bool chck=true;
     for(int i=2;i<=n;i++)
-        if(cnt[i]==-1){
+        if((cnt[i]==-1)||(i+1<=n&&cnt[i]==cnt[i+1])){
             chck=false;
             break;
         }
