@@ -17,6 +17,5 @@ int main(){
     if(mxi<mni) rs=mxi-1+n-mni;
     else rs=mxi-1+n-mni-1;
     cout<<rs<<endl;
-
     return 0;
 }
