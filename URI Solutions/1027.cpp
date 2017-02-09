@@ -54,7 +54,7 @@ int main() {
 	int n;
 	while (cin >> n){
 		int mx = -1000, mn = 1000, rs = 1;
-		vector< pair<int, int>> points;
+		vector<pair<int, int>> points;
 		for (int i = 0; i < n; i++) {
 			int x, y; cin >> x >> y;
 			mn = min(mn, y), mx = max(mx, y);
