@@ -29,7 +29,7 @@ private:
                 else {
                         if (lvl % 2) ST[i] = buildSTUtil(list, s, md, i * 2 + 1) ^
                                 buildSTUtil(list, md + 1, e, i * 2 + 2);
-                        else ST[i] = buildSTUtil(list, s, md, i * 2 + 1) ^
+                        else ST[i] = buildSTUtil(list, s, md, i * 2 + 1) |
                                 buildSTUtil(list, md + 1, e, i * 2 + 2);
                 }
                 return ST[i];
