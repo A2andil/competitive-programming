@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <algorithm>
+#include <cmath>
 
 #define ll long long
 using namespace std;
@@ -11,8 +12,8 @@ private:
         int *ST, size;
         int Pow(int b, int n) {
                 if (!n) return 1;
-                int rs = Pow(b, n / 2);
-                return n % 2 ? rs * rs * b : rs * rs;
+                int ans = Pow(b, n / 2);
+                return n % 2 ? ans * ans * b : ans * ans;
         }
         int buildSTUtil(int *list, int s, int e, int i) {
                 if (s == e) {
@@ -56,12 +57,12 @@ private:
                 return ST[si];
         }
         int level(int i) {
-                int rs = 0;
+                int cnt = 0;
                 while (i) {
                         i = (i - 1) / 2;
-                        rs++;
+                        cnt++;
                 }
-                return rs;
+                return cnt;
         }
 public:
         SegmentTree(int *list, int n) {
